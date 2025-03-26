@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Kółko i Krzyżyk</h1>
+    <h1>Tic-Tac-Toe Game</h1>
     
     <div>
-        <label for="difficulty">Wybierz poziom trudności:</label>
+        <label for="difficulty">Select difficult level:</label>
         <select id="difficulty" onchange="setDifficulty()">
-            <option value="easy">Łatwy</option>
-            <option value="medium">Średni</option>
-            <option value="hard">Trudny</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
         </select>
     </div>
     
     <div>
-        <label for="playerChoice">Wybierz symbol:</label>
+        <label for="playerChoice">Select a symbol:</label>
         <select id="playerChoice" onchange="setPlayerSymbol()">
-            <option value="X">Krzyżyk (X)</option>
-            <option value="O">Kółko (O)</option>
+            <option value="X">Cross (X)</option>
+            <option value="O">Circle (O)</option>
         </select>
     </div>
     
     <div class="board" id="board"></div>
     <p id="status"></p>
-    <button onclick="resetGame()">Resetuj</button>
+    <button onclick="resetGame()">Restart</button>
     <script src="main.js"></script>
 </body>
 </html>
